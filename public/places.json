@@ -1,0 +1,1656 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4305",
+        "name": "WHIAN WHIAN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.34967713,
+          -28.60610226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1286",
+        "name": "DOON DOON",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.30563159,
+          -28.49608843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1421",
+        "name": "ELONG ELONG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.07455885,
+          -32.1509472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1731",
+        "name": "GOONOO GOONOO",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.9126619,
+          -31.29153535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1816",
+        "name": "GUMLY GUMLY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.43178472,
+          -35.13206191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2234",
+        "name": "KUNDLE KUNDLE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.52984858,
+          -31.85309559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1825",
+        "name": "GUNDY",
+        "aliases": [
+          "GUNDY GUNDY"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.98364439,
+          -31.99622143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1055",
+        "name": "COOMOO COOMOO",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.10908534,
+          -31.56918549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2726",
+        "name": "MOONEY MOONEY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.212128,
+          -33.529514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1645",
+        "name": "GIN GIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.09157689,
+          -31.90046113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4133",
+        "name": "WALLA WALLA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.87495352,
+          -35.73603769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4170",
+        "name": "WANGI WANGI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.58771689,
+          -33.06988289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2960",
+        "name": "NEVER NEVER",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.81939995,
+          -30.35582825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW457",
+        "name": "BOM BOM",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.96954779,
+          -29.76508037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4119",
+        "name": "WAGGA WAGGA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.35983656,
+          -35.10817205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4379",
+        "name": "WOG WOG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.44139322,
+          -37.07617818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1789",
+        "name": "GREG GREG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.07083154,
+          -36.06329259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2028",
+        "name": "JELLAT JELLAT",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.88123232,
+          -36.72436298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2129",
+        "name": "KERI KERI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.98365405,
+          -34.77431799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1318",
+        "name": "DUM DUM",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.35540885,
+          -28.38741668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW3983",
+        "name": "TUCKI TUCKI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.31697242,
+          -28.92154122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW992",
+        "name": "COLLUM COLLUM",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.47770939,
+          -29.2539478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW232",
+        "name": "BAW BAW",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.63850668,
+          -34.71904344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4378",
+        "name": "WOG WOG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.05385425,
+          -35.2640402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2243",
+        "name": "KURRI KURRI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.48020177,
+          -32.81505637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1179",
+        "name": "CURL CURL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.28967606,
+          -33.76910952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1628",
+        "name": "GHINNI GHINNI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.54850501,
+          -31.88143686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1712",
+        "name": "GOL GOL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.22500324,
+          -34.16741863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW497",
+        "name": "BOONOO BOONOO",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.10239418,
+          -28.91553143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW510",
+        "name": "BOOTI BOOTI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.52231347,
+          -32.31686241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4132",
+        "name": "WALGETT",
+        "aliases": [
+          "EURIE EURIE"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.05621224,
+          -29.97973093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4456",
+        "name": "WOY WOY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.29601339,
+          -33.50115712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW2842",
+        "name": "MULI MULI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.58338468,
+          -28.41823856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW3901",
+        "name": "TILBA TILBA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.03878302,
+          -36.33545376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW578",
+        "name": "BRIL BRIL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.55768562,
+          -31.27862459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1352",
+        "name": "DURREN DURREN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.39507413,
+          -33.181845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW1800",
+        "name": "GRONG GRONG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.78488679,
+          -34.68823109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4238",
+        "name": "WAY WAY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.9397594,
+          -30.78063984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW650",
+        "name": "BUDGEE BUDGEE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.66445437,
+          -32.51768173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW481",
+        "name": "BOOK BOOK",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.54534578,
+          -35.33352609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW5097",
+        "name": "BEGGAN BEGGAN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.29267085,
+          -34.64538405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW3953",
+        "name": "TOPI TOPI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.33869304,
+          -32.35848215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW4329",
+        "name": "WILLI WILLI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.3888107,
+          -30.96637653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NSW167",
+        "name": "BANDA BANDA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.45288272,
+          -31.19475682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NT281",
+        "name": "WAK WAK",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.23696779,
+          -12.66325286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NT88",
+        "name": "EAST ARNHEM",
+        "aliases": [
+          "BIRANY BIRANY"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.89265094,
+          -12.60636001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NT21",
+        "name": "BAINES",
+        "aliases": [
+          "BUBBLE BUBBLE"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.4843051,
+          -15.90743318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "NT250",
+        "name": "TABLELANDS",
+        "aliases": [
+          "BANKA BANKA"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.51278382,
+          -18.92877084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1525",
+        "name": "KAWL KAWL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.72379443,
+          -26.18456755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1893",
+        "name": "MIN MIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.65844145,
+          -22.8964125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD256",
+        "name": "BILLA BILLA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.29120901,
+          -28.15238912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD292",
+        "name": "BLI BLI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.03339962,
+          -26.61093306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD2270",
+        "name": "OBUM OBUM",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.65547911,
+          -27.9200542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD141",
+        "name": "BAN BAN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.81032024,
+          -25.69405276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD746",
+        "name": "COWAN COWAN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.36616014,
+          -27.12585533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1143",
+        "name": "GIN GIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.94666876,
+          -24.97790335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1925",
+        "name": "MONA MONA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.5429988,
+          -16.74295131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD3256",
+        "name": "WUJAL WUJAL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.31316119,
+          -15.96837531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1861",
+        "name": "MIA MIA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.83062264,
+          -21.22326143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1564",
+        "name": "KIN KIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.86832993,
+          -26.25602564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD2269",
+        "name": "OBI OBI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.81620152,
+          -26.64366755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD2380",
+        "name": "PINDI PINDI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.7233352,
+          -20.85612917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "QLD1880",
+        "name": "MILLAA MILLAA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.62212744,
+          -17.49904035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA210006071",
+        "name": "BON BON",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.50336966,
+          -30.58972099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA210006143",
+        "name": "MERTY MERTY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.41150253,
+          -28.55506518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA210006223",
+        "name": "MUNDI MUNDI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.95193959,
+          -31.7428928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA210006146",
+        "name": "PANDIE PANDIE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761603,
+          -26.37118016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA524",
+        "name": "GURRA GURRA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6402902,
+          -34.30084058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "SA662",
+        "name": "KI KI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.79404481,
+          -35.56662226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC605",
+        "name": "COLAC COLAC",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.84814425,
+          -36.2234801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1971",
+        "name": "NOWA NOWA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.02012439,
+          -37.69329684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC477",
+        "name": "CARAG CARAG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.89376841,
+          -36.46005604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1668",
+        "name": "MIA MIA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.60798716,
+          -36.99005159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC226",
+        "name": "BET BET",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.75270651,
+          -36.92489242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC795",
+        "name": "DRUNG",
+        "aliases": [
+          "DRUNG DRUNG"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.32832091,
+          -36.765593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2121",
+        "name": "PURA PURA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.06857978,
+          -37.831926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2493",
+        "name": "TERRICK TERRICK",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.26337017,
+          -36.1201418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC372",
+        "name": "BUDGEE BUDGEE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.09564339,
+          -37.54593256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1264",
+        "name": "JOEL JOEL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.99087145,
+          -37.01480644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2639",
+        "name": "VITE VITE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.14492394,
+          -37.86012472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2528",
+        "name": "TOL TOL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.82577671,
+          -34.65135889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1974",
+        "name": "NUG NUG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.72766897,
+          -36.66463178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC343",
+        "name": "BRIT BRIT",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.74168049,
+          -37.41237464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2833",
+        "name": "WOOD WOOD",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.33286871,
+          -35.10150767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC782",
+        "name": "DRIK DRIK",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.26443068,
+          -38.01108685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1087",
+        "name": "GRE GRE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.0875402,
+          -36.67426075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC390",
+        "name": "BULN BULN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.9531453,
+          -38.09484041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2491",
+        "name": "TERIP TERIP",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.55715806,
+          -37.00901037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2849",
+        "name": "WOOL WOOL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.40904882,
+          -38.22767424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC981",
+        "name": "GHIN GHIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.35265174,
+          -37.14252701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1760",
+        "name": "MORRL MORRL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.89494631,
+          -36.86638439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2652",
+        "name": "WAL WAL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.62118367,
+          -36.80988805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1453",
+        "name": "LANG LANG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.58200289,
+          -38.29541216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC97",
+        "name": "BAEL BAEL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.7382111,
+          -35.68708587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC166",
+        "name": "BAW BAW",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.30686348,
+          -37.83205547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1912",
+        "name": "NERRIN NERRIN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.01903903,
+          -37.75889452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2888",
+        "name": "YABBA NORTH",
+        "aliases": [
+          "YABBA YABBA"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.68225053,
+          -36.23101353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1261",
+        "name": "JIL JIL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.97608693,
+          -35.82187677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC984",
+        "name": "GIL GIL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.04092652,
+          -36.32166551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1052",
+        "name": "GONG GONG",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.93731633,
+          -37.54899942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1705",
+        "name": "MITTA MITTA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.3985104,
+          -36.6300278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC1444",
+        "name": "LAL LAL",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.02952142,
+          -37.67307007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC631",
+        "name": "COPE COPE",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.07244945,
+          -36.46591253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "VIC2870",
+        "name": "WUK WUK",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.42668959,
+          -37.745079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "WA1902",
+        "name": "BINDI BINDI",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.41559521,
+          -30.61729898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "WA1949",
+        "name": "NERREN NERREN",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.41051918,
+          -27.0653168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "WA2413",
+        "name": "BALLA BALLA",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.732429,
+          -20.686194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "WA1730",
+        "name": "LEONORA",
+        "aliases": [
+          "MURRIN MURRIN"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45709765,
+          -28.84346893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "loc_pid": "WA2653",
+        "name": "BALLY BALLY",
+        "aliases": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.14095709,
+          -32.20781826
+        ]
+      }
+    }
+  ]
+}
