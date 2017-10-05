@@ -83,6 +83,21 @@
         },
         sortIndicator: true,
         afterSelection: afterSelection,
+        contextMenu: {
+          callback: function (key, options) {
+            const row = hot.getSelected()[0];
+            const feature = features[hot.toPhysicalRow(row)];
+            const coordinates = feature.geometry.coordinates;
+            if (key === 'goog') {
+              window.location = 'http://www.google.com/maps/place/@' + coordinates[1] + ',' + coordinates[0] + ',13z';
+            }
+          },
+          items: {
+            'goog': {
+              name: 'Visit in Google Maps',
+            }
+          }
+        }
       });
 
       // Load the data and handle it in the future, but...
@@ -157,7 +172,7 @@
         if (r === r2 && c === c2) {
           const feature = features[hot.toPhysicalRow(r)];
           const coordinates = feature.geometry.coordinates;
-          map.flyTo([ coordinates[1], coordinates[0] ], 12);
+          map.flyTo([ coordinates[1], coordinates[0] ], 13);
         }
       }
 
