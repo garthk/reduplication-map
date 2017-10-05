@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A map of reduplicated place names in Australia">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha256-LcmP8hlMTofQrGU6W2q3tUnDnDZ1QVraxfMkP060ekM=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha256-kdEnCVOWosn3TNsGslxB8ffuKdrZoGQdIdPwh7W1CsE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/handsontable/0.34.4/handsontable.full.min.css" integrity="sha256-bJqNxI1LD13gLuFkbBO0HTAqWD+JYKGZjSmqn0E9Yyw=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handsontable/0.34.4/handsontable.full.min.js" integrity="sha256-Vzivz82LBgH3VbxDs8BvvPPRNcbN0dBj7U1YW7+PWV0=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <p>
+        Planning a road trip? This
+        <strong>Reduplication Map of Australia</strong> shows around a hundred
+        <em><a href="https://en.wikipedia.org/wiki/List_of_reduplicated_Australian_place_names"
+           title="List of reduplicated Australian place names">reduplicated</a></em>
+        locality names and aliases from the
+        <a href="https://www.psma.com.au/products/g-naf" title="G-NAF at PSMA">PSMA G-NAF</a>
+        dataset, a comprehensive list of Australian addresses available from
+        <a href="https://data.gov.au/dataset/geocoded-national-address-file-g-naf"
+           title="G-NAF at data.gov.au">data.gov.au</a> on the condition that you don't
+        attempt to use it to send physical mail unless you have some other means to verify
+        you're not wasting Australia Post's time.
+      </p>
+    </header>
+    <main>
+      <div id="map-holder">
+        <div id="map"></div>        
+      </div>
+      <div id="table-holder">
+        <div id="table"></div>        
+      </div>
+    </main>
+   <footer>
+      <p>
+        You can <a href="https://glitch.com/edit/#!/reduplication-map?path=README.md">remix this in Glitch</a>
+        to make your own map. GeoJSON and Leaflet make it relatively easy to muck around with maps. Glitch
+        makes it even easier. Get started on that!
+     </p>
+  </footer>
+    <script>
+      const map = L.map('map').setView([ -33.50115712, 151.29601339 ], 13);
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      map.flyToBounds([[ -43.63, 113.34 ], [ -10.67, 153.57 ]]);
+      
+      let features = [];
+      let layer = null;
+      
+      // https://docs.handsontable.com/0.34.4/demo-custom-renderers.html
+      Handsontable.renderers.registerRenderer('my.comma-list', renderCommaList);
+
+      const hot = new Handsontable(document.getElementById('table'), {
+        data: features,
+        rowHeaders: true,
+        colHeaders: ["id", "state", "name", "aliases"],
+        columns: [{
+          data: 'id',
+          readOnly: true,
+        }, {
+          data: 'properties.state',
+          readOnly: true,
+        }, {
+          data: 'properties.name',
+          readOnly: true,
+        }, {
+          data: 'properties.aliases',
+          renderer: 'my.comma-list',
+          readOnly: true,
+          sortFunction: stringArraySortFunction,
+        }],
+        minRows: 100,
+        cells: configureCell,
+        columnSorting: {
+          sortEmptyCells: false,
+        },
+        sortIndicator: true,
+        afterSelection: afterSelection,
+      });
+
+      // Load the data and handle it in the future, but...
+      fetch('/places.json').then(r => r.json()).then(handleLoadedData);
+
+      // ... shove in some example data right now:
+      handleLoadedData({
+        type: 'FeatureCollection',
+        features: [{
+          type: "Feature",
+          properties: {
+            loc_pid: "NSW4119",
+            name: "WAGGA WAGGA",
+            aliases: []
+          },
+          geometry: {
+            type: "Point",
+            coordinates: [
+              147.35983656,
+              -35.10817205
+            ]
+          }
+        }],
+      });
+      
+      /** Handle a freshly loaded GeoJSON FeatureCollection. */
+      function handleLoadedData(fc) {
+        // For the table:
+        features = fc.features.map(fixFeature);
+        hot.loadData(features);
+
+        // For the map:
+        if (layer) {
+          layer.remove();
+          layer = null;
+        }
+        // http://leafletjs.com/reference-1.2.0.html#geojson
+        layer = L.geoJSON(fc, { onEachFeature: onEachFeature });
+        layer.addTo(map);
+      }
+      
+      /** Fix a single loaded feature. */
+      function fixFeature(feature) {
+        // Rudely modify data in place because we assume we're the only consumer
+        feature.id = feature.properties.loc_pid;
+        delete feature.properties.loc_pid;
+        const match = feature.id.match(/^([A-Z]+)([0-9]+)/);
+        if (match) {
+          feature.properties.state = match[1];
+        }
+        return feature;
+      }
+
+      /** On each feature added to Leaflet, bind a popup. */
+      function onEachFeature(feature, layer) {
+        var parts = [feature.properties.name];
+        var aliases = feature.properties.aliases || [];
+        if (aliases.length) {
+          parts.push('aka');
+          parts.push(aliases.join(', '));
+        }
+        layer.bindPopup(parts.join(' '));
+      }      
+      
+      /** Configure each cell for Handsontable */
+      function configureCell(row, col, props) {
+        return { };
+      }
+        
+      /** After selection in Handsontable, fly to the row's feature if it's just one row. */
+      function afterSelection(r, c, r2, c2) {
+        if (r === r2 && c === c2) {
+          const feature = features[hot.toPhysicalRow(r)];
+          const coordinates = feature.geometry.coordinates;
+          map.flyTo([ coordinates[1], coordinates[0] ], 12);
+        }
+      }
+      
+      /* From here down, all the code is handling that one feature property with an array in it.
+         If your data doesn't have any such properties, congratulations! Delete from here down
+         to the end of the script, then tidy up according to your console errors. */
+      
+      /** Render an array value in Handsontable as a comma-delimited list */
+      function renderCommaList(instance, td, row, column, prop, value, cellProperties) {
+        value = resolveAliases(value) || '';
+        Handsontable.renderers.TextRenderer.apply(this, [ instance, td, row, column, prop, value, cellProperties ]);
+      }
+      
+      /** Compare two string array values, with special handling of empty or missing arrays */
+      function stringArraySortFunction(sortOrder) {
+        const direction = sortOrder ? 1 : -1;
+        return function compareArrayValues(a, b) {
+          const first = resolveAliases(a[1]);
+          const second = resolveAliases(b[1]);
+          
+          if (first === null && second === null) {
+            return 0; // nobody wins
+            
+          } else if (first === null && second !== null) {
+            return 1; // second wins, regardless of the sort order 
+          
+          } else if (first !== null && second === null) {
+            return -1; // first wins, regardless of the sort order
+          
+          } else {
+            return direction * first.localeCompare(second);
+          }
+        } 
+      }
+      
+      /** Resolve an aliases array (almost always 0..1 members) to a string */
+      function resolveAliases(aliases) {
+        if (aliases instanceof Array && aliases.length > 0) {
+          return aliases.join(',');
+        } else {
+          return null;
+        }
+      }
+    </script>
+  </body>
+</html>

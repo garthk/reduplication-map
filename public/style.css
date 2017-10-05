@@ -1,14 +1,6 @@
-/* styles */
-/* called by your view template */
-
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
-p {
-  font-family: helvetica, arial, sans-serif;
-}
 html, body {
     position: fixed;
-    top: 0; 
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -16,29 +8,64 @@ html, body {
     padding: 0;
     height: 100%;
 }
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 header {
-  padding: 1vh;
+  padding: 0.5vh;
 }
+
+header > p:first-child {
+  margin-top: 0;
+}
+
+header > p:last-child {
+  margin-bottom: 0;
+}
+
 main {
   display: flex;
   flex: 1;
-  padding: 1vh;
+  flex-direction: column;
 }
-footer {
-  padding: 1vh;
+
+main > div {
+  padding: 0.5vh;
 }
-#map {
+
+div#map-holder {
+  flex: 2;
+}
+
+div#map {
   height: 100%;
 }
+
+div#table-holder {
+  flex: 1;
+  overflow: hidden;
+}
+
+footer {
+  padding: 0.5vh;
+}
+
+footer > p:first-child {
+  margin-top: 0;
+}
+
+footer > p:last-child {
+  margin-bottom: 0;
+}
+
 p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 23px;
 	font-weight: 400;
 	font-size: 14px;
-} 
-]
+}
+

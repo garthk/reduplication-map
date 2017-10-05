@@ -1,39 +1,37 @@
-// server.js
-// where your node app starts
+const express = require('express');
+const path = require('path');
 
-// init project
-var express = require('express');
-var app = express();
+/** 
+ * Make our application
+ * 
+ * @param {string} staticdir Where to find `index.html` and static assets 
+ */
+function mkapp(staticdir) {
+  const app = express();
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
+  app.use(express.static(staticdir));
 
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+  app.get("/", function (request, response) {
+    response.sendFile(path.join(staticdir, 'index.html'));
+  });
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
-});
+  return app;
+}
 
-app.get("/dreams", function (request, response) {
-  response.send(dreams);
-});
+/**
+ * Have an app listen on a port.
+ * 
+ * @param {Express} app The app
+ * @param {number} port The port
+ */
+function listen(app, port) {
+  var listener = app.listen(port, function () {
+    const { address, family, port } = listener.address();
+    console.log(`Listening on ${family} ${address} ${port}`);
+  });
+}
 
-// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
-app.post("/dreams", function (request, response) {
-  dreams.push(request.query.dream);
-  response.sendStatus(200);
-});
-
-// Simple in-memory store for now
-var dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
-
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
+if (!module.parent) {
+  const app = mkapp(path.join(__dirname, 'public'));
+  listen(app, process.env.PORT || '8080');
+}

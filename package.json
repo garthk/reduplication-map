@@ -1,11 +1,8 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-
-  "name": "my-glitch-app",
-  "version": "0.0.1",
-  "description": "What am I about?",
+  "name": "@garthk/reduplication-map",
+  "version": "1.0.0",
+  "description": "A reduplication map of Australia",
+  "private": true,
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -17,12 +14,11 @@
     "node": "8.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "url": "https://github.com/garthk/reduplication-map.git"
   },
   "license": "MIT",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
+    "reduplication",
+    "glitch"
   ]
 }
