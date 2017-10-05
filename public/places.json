@@ -3,10 +3,10 @@
   "features": [
     {
       "type": "Feature",
+      "id": "NSW4305",
       "properties": {
-        "loc_pid": "NSW4305",
         "name": "WHIAN WHIAN",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -18,10 +18,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1286",
       "properties": {
-        "loc_pid": "NSW1286",
         "name": "DOON DOON",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -33,10 +33,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1421",
       "properties": {
-        "loc_pid": "NSW1421",
         "name": "ELONG ELONG",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -48,10 +48,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1731",
       "properties": {
-        "loc_pid": "NSW1731",
         "name": "GOONOO GOONOO",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -63,10 +63,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1816",
       "properties": {
-        "loc_pid": "NSW1816",
         "name": "GUMLY GUMLY",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -78,10 +78,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2234",
       "properties": {
-        "loc_pid": "NSW2234",
         "name": "KUNDLE KUNDLE",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -93,12 +93,11 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1825",
       "properties": {
-        "loc_pid": "NSW1825",
-        "name": "GUNDY",
-        "aliases": [
-          "GUNDY GUNDY"
-        ]
+        "name": "GUNDY GUNDY",
+        "aka": "GUNDY",
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -110,10 +109,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1055",
       "properties": {
-        "loc_pid": "NSW1055",
         "name": "COOMOO COOMOO",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -125,10 +124,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2726",
       "properties": {
-        "loc_pid": "NSW2726",
         "name": "MOONEY MOONEY",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -140,10 +139,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1645",
       "properties": {
-        "loc_pid": "NSW1645",
         "name": "GIN GIN",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -155,10 +154,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4133",
       "properties": {
-        "loc_pid": "NSW4133",
         "name": "WALLA WALLA",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -170,10 +169,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4170",
       "properties": {
-        "loc_pid": "NSW4170",
         "name": "WANGI WANGI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -185,10 +184,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2960",
       "properties": {
-        "loc_pid": "NSW2960",
         "name": "NEVER NEVER",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -200,10 +199,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW457",
       "properties": {
-        "loc_pid": "NSW457",
         "name": "BOM BOM",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -215,10 +214,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4119",
       "properties": {
-        "loc_pid": "NSW4119",
         "name": "WAGGA WAGGA",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -230,10 +229,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4379",
       "properties": {
-        "loc_pid": "NSW4379",
         "name": "WOG WOG",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -245,10 +244,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1789",
       "properties": {
-        "loc_pid": "NSW1789",
         "name": "GREG GREG",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -260,10 +259,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2028",
       "properties": {
-        "loc_pid": "NSW2028",
         "name": "JELLAT JELLAT",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -275,10 +274,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2129",
       "properties": {
-        "loc_pid": "NSW2129",
         "name": "KERI KERI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -290,10 +289,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1318",
       "properties": {
-        "loc_pid": "NSW1318",
         "name": "DUM DUM",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -305,10 +304,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW3983",
       "properties": {
-        "loc_pid": "NSW3983",
         "name": "TUCKI TUCKI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -320,10 +319,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW992",
       "properties": {
-        "loc_pid": "NSW992",
         "name": "COLLUM COLLUM",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -335,10 +334,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW232",
       "properties": {
-        "loc_pid": "NSW232",
         "name": "BAW BAW",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -350,10 +349,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4378",
       "properties": {
-        "loc_pid": "NSW4378",
         "name": "WOG WOG",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -365,10 +364,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2243",
       "properties": {
-        "loc_pid": "NSW2243",
         "name": "KURRI KURRI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -380,10 +379,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1179",
       "properties": {
-        "loc_pid": "NSW1179",
         "name": "CURL CURL",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -395,10 +394,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1628",
       "properties": {
-        "loc_pid": "NSW1628",
         "name": "GHINNI GHINNI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -410,10 +409,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1712",
       "properties": {
-        "loc_pid": "NSW1712",
         "name": "GOL GOL",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -425,10 +424,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW497",
       "properties": {
-        "loc_pid": "NSW497",
         "name": "BOONOO BOONOO",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -440,10 +439,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW510",
       "properties": {
-        "loc_pid": "NSW510",
         "name": "BOOTI BOOTI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -455,12 +454,11 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4132",
       "properties": {
-        "loc_pid": "NSW4132",
-        "name": "WALGETT",
-        "aliases": [
-          "EURIE EURIE"
-        ]
+        "name": "EURIE EURIE",
+        "aka": "WALGETT",
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -472,10 +470,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4456",
       "properties": {
-        "loc_pid": "NSW4456",
         "name": "WOY WOY",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -487,10 +485,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW2842",
       "properties": {
-        "loc_pid": "NSW2842",
         "name": "MULI MULI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -502,10 +500,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW3901",
       "properties": {
-        "loc_pid": "NSW3901",
         "name": "TILBA TILBA",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -517,10 +515,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW578",
       "properties": {
-        "loc_pid": "NSW578",
         "name": "BRIL BRIL",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -532,10 +530,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1352",
       "properties": {
-        "loc_pid": "NSW1352",
         "name": "DURREN DURREN",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -547,10 +545,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW1800",
       "properties": {
-        "loc_pid": "NSW1800",
         "name": "GRONG GRONG",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -562,10 +560,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4238",
       "properties": {
-        "loc_pid": "NSW4238",
         "name": "WAY WAY",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -577,10 +575,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW650",
       "properties": {
-        "loc_pid": "NSW650",
         "name": "BUDGEE BUDGEE",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -592,10 +590,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW481",
       "properties": {
-        "loc_pid": "NSW481",
         "name": "BOOK BOOK",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -607,10 +605,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW5097",
       "properties": {
-        "loc_pid": "NSW5097",
         "name": "BEGGAN BEGGAN",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -622,10 +620,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW3953",
       "properties": {
-        "loc_pid": "NSW3953",
         "name": "TOPI TOPI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -637,10 +635,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW4329",
       "properties": {
-        "loc_pid": "NSW4329",
         "name": "WILLI WILLI",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -652,10 +650,10 @@
     },
     {
       "type": "Feature",
+      "id": "NSW167",
       "properties": {
-        "loc_pid": "NSW167",
         "name": "BANDA BANDA",
-        "aliases": []
+        "state": "NSW"
       },
       "geometry": {
         "type": "Point",
@@ -667,10 +665,10 @@
     },
     {
       "type": "Feature",
+      "id": "NT281",
       "properties": {
-        "loc_pid": "NT281",
         "name": "WAK WAK",
-        "aliases": []
+        "state": "NT"
       },
       "geometry": {
         "type": "Point",
@@ -682,12 +680,11 @@
     },
     {
       "type": "Feature",
+      "id": "NT88",
       "properties": {
-        "loc_pid": "NT88",
-        "name": "EAST ARNHEM",
-        "aliases": [
-          "BIRANY BIRANY"
-        ]
+        "name": "BIRANY BIRANY",
+        "aka": "EAST ARNHEM",
+        "state": "NT"
       },
       "geometry": {
         "type": "Point",
@@ -699,12 +696,11 @@
     },
     {
       "type": "Feature",
+      "id": "NT21",
       "properties": {
-        "loc_pid": "NT21",
-        "name": "BAINES",
-        "aliases": [
-          "BUBBLE BUBBLE"
-        ]
+        "name": "BUBBLE BUBBLE",
+        "aka": "BAINES",
+        "state": "NT"
       },
       "geometry": {
         "type": "Point",
@@ -716,12 +712,11 @@
     },
     {
       "type": "Feature",
+      "id": "NT250",
       "properties": {
-        "loc_pid": "NT250",
-        "name": "TABLELANDS",
-        "aliases": [
-          "BANKA BANKA"
-        ]
+        "name": "BANKA BANKA",
+        "aka": "TABLELANDS",
+        "state": "NT"
       },
       "geometry": {
         "type": "Point",
@@ -733,10 +728,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1525",
       "properties": {
-        "loc_pid": "QLD1525",
         "name": "KAWL KAWL",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -748,10 +743,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1893",
       "properties": {
-        "loc_pid": "QLD1893",
         "name": "MIN MIN",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -763,10 +758,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD256",
       "properties": {
-        "loc_pid": "QLD256",
         "name": "BILLA BILLA",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -778,10 +773,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD292",
       "properties": {
-        "loc_pid": "QLD292",
         "name": "BLI BLI",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -793,10 +788,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD2270",
       "properties": {
-        "loc_pid": "QLD2270",
         "name": "OBUM OBUM",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -808,10 +803,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD141",
       "properties": {
-        "loc_pid": "QLD141",
         "name": "BAN BAN",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -823,10 +818,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD746",
       "properties": {
-        "loc_pid": "QLD746",
         "name": "COWAN COWAN",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -838,10 +833,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1143",
       "properties": {
-        "loc_pid": "QLD1143",
         "name": "GIN GIN",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -853,10 +848,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1925",
       "properties": {
-        "loc_pid": "QLD1925",
         "name": "MONA MONA",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -868,10 +863,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD3256",
       "properties": {
-        "loc_pid": "QLD3256",
         "name": "WUJAL WUJAL",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -883,10 +878,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1861",
       "properties": {
-        "loc_pid": "QLD1861",
         "name": "MIA MIA",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -898,10 +893,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1564",
       "properties": {
-        "loc_pid": "QLD1564",
         "name": "KIN KIN",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -913,10 +908,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD2269",
       "properties": {
-        "loc_pid": "QLD2269",
         "name": "OBI OBI",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -928,10 +923,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD2380",
       "properties": {
-        "loc_pid": "QLD2380",
         "name": "PINDI PINDI",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -943,10 +938,10 @@
     },
     {
       "type": "Feature",
+      "id": "QLD1880",
       "properties": {
-        "loc_pid": "QLD1880",
         "name": "MILLAA MILLAA",
-        "aliases": []
+        "state": "QLD"
       },
       "geometry": {
         "type": "Point",
@@ -958,10 +953,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA210006071",
       "properties": {
-        "loc_pid": "SA210006071",
         "name": "BON BON",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -973,10 +968,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA210006143",
       "properties": {
-        "loc_pid": "SA210006143",
         "name": "MERTY MERTY",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -988,10 +983,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA210006223",
       "properties": {
-        "loc_pid": "SA210006223",
         "name": "MUNDI MUNDI",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -1003,10 +998,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA210006146",
       "properties": {
-        "loc_pid": "SA210006146",
         "name": "PANDIE PANDIE",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -1018,10 +1013,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA524",
       "properties": {
-        "loc_pid": "SA524",
         "name": "GURRA GURRA",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -1033,10 +1028,10 @@
     },
     {
       "type": "Feature",
+      "id": "SA662",
       "properties": {
-        "loc_pid": "SA662",
         "name": "KI KI",
-        "aliases": []
+        "state": "SA"
       },
       "geometry": {
         "type": "Point",
@@ -1048,10 +1043,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC605",
       "properties": {
-        "loc_pid": "VIC605",
         "name": "COLAC COLAC",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1063,10 +1058,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1971",
       "properties": {
-        "loc_pid": "VIC1971",
         "name": "NOWA NOWA",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1078,10 +1073,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC477",
       "properties": {
-        "loc_pid": "VIC477",
         "name": "CARAG CARAG",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1093,10 +1088,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1668",
       "properties": {
-        "loc_pid": "VIC1668",
         "name": "MIA MIA",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1108,10 +1103,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC226",
       "properties": {
-        "loc_pid": "VIC226",
         "name": "BET BET",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1123,12 +1118,11 @@
     },
     {
       "type": "Feature",
+      "id": "VIC795",
       "properties": {
-        "loc_pid": "VIC795",
-        "name": "DRUNG",
-        "aliases": [
-          "DRUNG DRUNG"
-        ]
+        "name": "DRUNG DRUNG",
+        "aka": "DRUNG",
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1140,10 +1134,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2121",
       "properties": {
-        "loc_pid": "VIC2121",
         "name": "PURA PURA",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1155,10 +1149,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2493",
       "properties": {
-        "loc_pid": "VIC2493",
         "name": "TERRICK TERRICK",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1170,10 +1164,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC372",
       "properties": {
-        "loc_pid": "VIC372",
         "name": "BUDGEE BUDGEE",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1185,10 +1179,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1264",
       "properties": {
-        "loc_pid": "VIC1264",
         "name": "JOEL JOEL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1200,10 +1194,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2639",
       "properties": {
-        "loc_pid": "VIC2639",
         "name": "VITE VITE",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1215,10 +1209,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2528",
       "properties": {
-        "loc_pid": "VIC2528",
         "name": "TOL TOL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1230,10 +1224,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1974",
       "properties": {
-        "loc_pid": "VIC1974",
         "name": "NUG NUG",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1245,10 +1239,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC343",
       "properties": {
-        "loc_pid": "VIC343",
         "name": "BRIT BRIT",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1260,10 +1254,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2833",
       "properties": {
-        "loc_pid": "VIC2833",
         "name": "WOOD WOOD",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1275,10 +1269,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC782",
       "properties": {
-        "loc_pid": "VIC782",
         "name": "DRIK DRIK",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1290,10 +1284,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1087",
       "properties": {
-        "loc_pid": "VIC1087",
         "name": "GRE GRE",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1305,10 +1299,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC390",
       "properties": {
-        "loc_pid": "VIC390",
         "name": "BULN BULN",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1320,10 +1314,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2491",
       "properties": {
-        "loc_pid": "VIC2491",
         "name": "TERIP TERIP",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1335,10 +1329,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2849",
       "properties": {
-        "loc_pid": "VIC2849",
         "name": "WOOL WOOL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1350,10 +1344,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC981",
       "properties": {
-        "loc_pid": "VIC981",
         "name": "GHIN GHIN",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1365,10 +1359,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1760",
       "properties": {
-        "loc_pid": "VIC1760",
         "name": "MORRL MORRL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1380,10 +1374,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2652",
       "properties": {
-        "loc_pid": "VIC2652",
         "name": "WAL WAL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1395,10 +1389,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1453",
       "properties": {
-        "loc_pid": "VIC1453",
         "name": "LANG LANG",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1410,10 +1404,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC97",
       "properties": {
-        "loc_pid": "VIC97",
         "name": "BAEL BAEL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1425,10 +1419,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC166",
       "properties": {
-        "loc_pid": "VIC166",
         "name": "BAW BAW",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1440,10 +1434,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1912",
       "properties": {
-        "loc_pid": "VIC1912",
         "name": "NERRIN NERRIN",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1455,12 +1449,11 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2888",
       "properties": {
-        "loc_pid": "VIC2888",
-        "name": "YABBA NORTH",
-        "aliases": [
-          "YABBA YABBA"
-        ]
+        "name": "YABBA YABBA",
+        "aka": "YABBA NORTH",
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1472,10 +1465,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1261",
       "properties": {
-        "loc_pid": "VIC1261",
         "name": "JIL JIL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1487,10 +1480,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC984",
       "properties": {
-        "loc_pid": "VIC984",
         "name": "GIL GIL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1502,10 +1495,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1052",
       "properties": {
-        "loc_pid": "VIC1052",
         "name": "GONG GONG",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1517,10 +1510,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1705",
       "properties": {
-        "loc_pid": "VIC1705",
         "name": "MITTA MITTA",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1532,10 +1525,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC1444",
       "properties": {
-        "loc_pid": "VIC1444",
         "name": "LAL LAL",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1547,10 +1540,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC631",
       "properties": {
-        "loc_pid": "VIC631",
         "name": "COPE COPE",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1562,10 +1555,10 @@
     },
     {
       "type": "Feature",
+      "id": "VIC2870",
       "properties": {
-        "loc_pid": "VIC2870",
         "name": "WUK WUK",
-        "aliases": []
+        "state": "VIC"
       },
       "geometry": {
         "type": "Point",
@@ -1577,10 +1570,10 @@
     },
     {
       "type": "Feature",
+      "id": "WA1902",
       "properties": {
-        "loc_pid": "WA1902",
         "name": "BINDI BINDI",
-        "aliases": []
+        "state": "WA"
       },
       "geometry": {
         "type": "Point",
@@ -1592,10 +1585,10 @@
     },
     {
       "type": "Feature",
+      "id": "WA1949",
       "properties": {
-        "loc_pid": "WA1949",
         "name": "NERREN NERREN",
-        "aliases": []
+        "state": "WA"
       },
       "geometry": {
         "type": "Point",
@@ -1607,10 +1600,10 @@
     },
     {
       "type": "Feature",
+      "id": "WA2413",
       "properties": {
-        "loc_pid": "WA2413",
         "name": "BALLA BALLA",
-        "aliases": []
+        "state": "WA"
       },
       "geometry": {
         "type": "Point",
@@ -1622,12 +1615,11 @@
     },
     {
       "type": "Feature",
+      "id": "WA1730",
       "properties": {
-        "loc_pid": "WA1730",
-        "name": "LEONORA",
-        "aliases": [
-          "MURRIN MURRIN"
-        ]
+        "name": "MURRIN MURRIN",
+        "aka": "LEONORA",
+        "state": "WA"
       },
       "geometry": {
         "type": "Point",
@@ -1639,10 +1631,10 @@
     },
     {
       "type": "Feature",
+      "id": "WA2653",
       "properties": {
-        "loc_pid": "WA2653",
         "name": "BALLY BALLY",
-        "aliases": []
+        "state": "WA"
       },
       "geometry": {
         "type": "Point",
