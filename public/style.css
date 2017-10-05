@@ -16,21 +16,50 @@ body {
 }
 
 header {
-  padding: 1vh;
+  padding: 0.5vh;
+}
+
+header > p:first-child {
+  margin-top: 0;
+}
+
+header > p:last-child {
+  margin-bottom: 0;
 }
 
 main {
   display: flex;
   flex: 1;
-  padding: 1vh;
+  flex-direction: column;
+}
+
+main > div {
+  padding: 0.5vh;
+}
+
+div#map-holder {
+  flex: 2;
+}
+
+div#map {
+  height: 100%;
+}
+
+div#table-holder {
+  flex: 1;
+  overflow: hidden;
 }
 
 footer {
-  padding: 1vh;
+  padding: 0.5vh;
 }
 
-#map {
-  height: 100%;
+footer > p:first-child {
+  margin-top: 0;
+}
+
+footer > p:last-child {
+  margin-bottom: 0;
 }
 
 p {
