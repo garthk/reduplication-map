@@ -1,4 +1,3 @@
-
 /**
  * @typedef {Object} FilterDefinition
  * @property {string} name - the filter's name
@@ -60,7 +59,6 @@ L.Control.FilterToggles = L.Control.extend({
     const labelFunction = filter.labelFunction;
     const name = filter.name || labelFunction.name;
     const buckets = {};
-    const state = {};
     const elements = {};
 
     for (let idx=0; idx<this.array.length; idx++) {
@@ -69,10 +67,11 @@ L.Control.FilterToggles = L.Control.extend({
         buckets[label].push(idx);
       } else {
         buckets[label] = [idx];
-        state[label] = true;
         elements[label] = null;
       }
     }
+
+    const state = new ToggleGroup(Object.keys(buckets));
 
     return {
       name,
@@ -143,51 +142,19 @@ L.Control.FilterToggles = L.Control.extend({
    * @param {boolean} shifted
    */
   _adjustState: function _adjustState(filter, label, shifted) {
-    const labels = this._labels(filter);
-    const enabled = labels.filter(get);
-
     if (shifted) {
-      flip(label);
-      return;
-
-    }
-    switch (enabled.length) {
-      case 1:
-        const current = enabled[0];
-        if (label === current) {
-          labels.forEach(enable);
-        } else {
-          disable(current);
-          enable(label);
-        }
-        return;
-
-      case 0:
-        enable(label);
-        return;
-
-      default:
-        labels.forEach(disable);
-        enable(label);
-        return;
+      return filter.state.flip(label, changed);
+    } else {
+      return filter.state.choose(label, changed);
     }
 
-    function get(l) { return filter.state[l]; }
-    function enable(l) {
-      filter.state[l] = true;
-      L.DomUtil.addClass(filter.elements[l], 'leaflet-control-filter-toggles-active');
-    }
-    function disable(l) {
-      filter.state[l] = false;
-      L.DomUtil.removeClass(filter.elements[l], 'leaflet-control-filter-toggles-active');
-    }
-    function flip(l) {
-      if (get(l)) {
-        disable(l);
+    function changed(l, v) {
+      if (v) {
+        L.DomUtil.addClass(filter.elements[l], 'leaflet-control-filter-toggles-active');
       } else {
-        enable(l);
+        L.DomUtil.removeClass(filter.elements[l], 'leaflet-control-filter-toggles-active');
       }
-     }
+    }
   },
 
   /**
@@ -206,7 +173,7 @@ L.Control.FilterToggles = L.Control.extend({
                    .sort(function(a, b) { return a - b; });
 
       function addLabelSurvivors(previously, label) {
-        if (filter.state[label]) {
+        if (filter.state.enabled[label]) {
           return previously.concat(filter.buckets[label]);
         } else {
           return previously;
@@ -238,4 +205,79 @@ L.Control.FilterToggles = L.Control.extend({
 /** Create a `L.Control.FilterToggles` control */
 L.control.filterToggles = function(all, filters, options) {
   return new L.Control.FilterToggles(features, filters, options);
+}
+
+/** A group of toggles. */
+class ToggleGroup {
+  /** A group of toggles. */
+  constructor(labels) {
+    const enabled = this.enabled = {};
+    for (let label of labels) {
+      this.enabled[label] = true;
+    }
+  }
+
+  /**
+   * Flip one label.
+   *
+   * @param {any} label - the label to flip
+   * @param {any} changed - handler function taking (label, newValue)
+   */
+  flip(label, changed) {
+    if (!(label in this.enabled)) {
+      throw new Error(`bad label ${label}`);
+    }
+    this.enabled[label] = !this.enabled[label];
+    if (changed) {
+      changed(label, this.enabled[label]);
+    }
+  }
+
+  /**
+   * Choose one label. Choosing it again will choose all labels.
+   *
+   * @param {any} label - the label to choose
+   * @param {any} changed - handler function taking (label, newValue)
+   */
+  choose(label, changed) {
+    if (!(label in this.enabled)) {
+      throw new Error(`bad label ${label}`);
+    }
+
+    const enabled = this.enabled;
+    const labels = Object.keys(enabled);
+    const activeLabels = labels.filter(label => enabled[label]);
+
+    switch (activeLabels.length) {
+      case 1:
+        const current = activeLabels[0];
+        if (label === current) {
+          labels.forEach(l => set(l, true));
+
+        } else {
+          set(current, false);
+          set(label, true);
+        }
+        return;
+
+      case 0:
+        set(label, true);
+        return;
+
+      default:
+        for (let l of labels) {
+          set(l, l === label);
+        }
+        return;
+    }
+
+    function set(label, value) {
+      if (enabled[label] !== value) {
+        enabled[label] = value;
+        if (changed) {
+          changed(label, value);
+        }
+      }
+    }
+  }
 }
