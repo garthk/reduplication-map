@@ -10,81 +10,58 @@ let layer = null;
 let legend = null;
 
 const hot = new Handsontable(document.getElementById('table'), {
-  data: features,
+  data: [['LOADING...']],
+  colHeaders: true,
   rowHeaders: true,
-  colHeaders: ["id", "state", "name", "aka"],
-  columns: [{
-    data: 'id',
-    readOnly: true,
-  }, {
-    data: 'properties.state',
-    readOnly: true,
-  }, {
-    data: 'properties.name',
-    readOnly: true,
-  }, {
-    data: 'properties.aka',
-    readOnly: true,
-  }],
-  // minRows: 100, // causes data modification FTL
-  columnSorting: {
-    sortEmptyCells: false,
-  },
-  sortIndicator: true,
-  afterSelection: afterSelection,
-  contextMenu: {
-    callback: function (key, options) {
-      const row = hot.getSelected()[0];
-      const feature = features[hot.toPhysicalRow(row)];
-      const coordinates = feature.geometry.coordinates;
-      if (key === 'goog') {
-        window.location = 'http://www.google.com/maps/place/@' + coordinates[1] + ',' + coordinates[0] + ',13z';
-      }
-    },
-    items: {
-      'goog': {
-        name: 'Visit in Google Maps',
-      }
-    }
-  }
+  readOnly: true,
 });
 
-// Load the data and handle it in the future, but...
 fetch('/places.json').then(r => r.json()).then(handleLoadedData);
-
-// ... shove in some example data right now:
-handleLoadedData({
-  type: 'FeatureCollection',
-  features: [{
-    type: "Feature",
-    id: "NSW4119",
-    properties: {
-      name: "WAGGA WAGGA",
-      state: "NSW",
-    },
-    geometry: {
-      type: "Point",
-      coordinates: [
-        147.35983656,
-        -35.10817205
-      ]
-    }
-  }],
-});
 
 /** Handle a freshly loaded GeoJSON FeatureCollection. */
 function handleLoadedData(fc) {
-  all = features = fc.features; // keep for afterSelection
-  rebuildFilterTogglesControl();
+  all = features = fc.features;
+  fixTableSettings();
+  addFilterTogglesControl();
   updateDisplay();
 }
 
-/** Build or rebuild the filter toggles control */
-function rebuildFilterTogglesControl() {
-  if (legend) {
-    map.off('filtered');
-    legend.remove(); // remove it
+/** Fix table */
+function fixTableSettings() {
+  hot.updateSettings({
+    colHeaders: ['id', 'state', 'name', 'aka'],
+    columns: [
+      { data: 'id' },
+      { data: 'properties.state' },
+      { data: 'properties.name' },
+      { data: 'properties.aka' },
+    ],
+    columnSorting: { sortEmptyCells: false },
+    sortIndicator: true,
+    afterSelection: afterSelection,
+    contextMenu: {
+      callback: onContextMenuChoice,
+      items: {
+        'goog': {
+          name: 'Visit in Google Maps',
+        }
+      }
+    }
+  });
+}
+
+/** Handle context menu choices */
+function onContextMenuChoice(key) {
+  const row = hot.getSelected()[0];
+  const feature = features[hot.toPhysicalRow(row)];
+  const coordinates = feature.geometry.coordinates;
+  if (key === 'goog') {
+    window.location = 'http://www.google.com/maps/place/@' + coordinates[1] + ',' + coordinates[0] + ',13z';
   }
+}
+
+/** Build or rebuild the filter toggles control */
+function addFilterTogglesControl() {
   legend = L.control.filterToggles(all, [{
     name: 'State',
     labelFunction: getStateLabel,
@@ -105,11 +82,7 @@ function onFilter(event) {
 /** Update the display */
 function updateDisplay() {
   hot.loadData(features);
-
-  if (layer) {
-    layer.remove(); // remove it
-  }
-
+  layer && layer.remove();
   const fc = { type: 'FeatureCollection', features };
   layer = L.geoJSON(fc, { onEachFeature: onEachFeature });
   layer.addTo(map);
