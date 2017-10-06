@@ -1,0 +1,26 @@
+.leaflet-control-filter-toggles a.leaflet-touch {
+  padding: 0 0.5em 0 0.5em;
+  user-select: none;
+}
+
+a.leaflet-control-filter-toggles-active {
+  font-weight: bold;
+  background-color: #fcf;
+}
+
+a.leaflet-control-filter-toggles-active:hover {
+  background-color: #ece;
+}
+
+.leaflet-control-filter-toggles {
+  display: flex;
+  flex-direction: row;
+}
+
+.leaflet-control-filter-toggles>div {
+  margin-right: 10px;
+}
+
+.leaflet-control-filter-toggles>div:last-child {
+  margin-right: 0px;
+}

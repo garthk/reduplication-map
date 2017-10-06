@@ -4,8 +4,10 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 map.flyToBounds([[ -43.63, 113.34 ], [ -10.67, 153.57 ]]);
 
+let all = [];
 let features = [];
 let layer = null;
+let legend = null;
 
 const hot = new Handsontable(document.getElementById('table'), {
   data: features,
@@ -24,7 +26,7 @@ const hot = new Handsontable(document.getElementById('table'), {
     data: 'properties.aka',
     readOnly: true,
   }],
-  minRows: 100,
+  // minRows: 100, // causes data modification FTL
   columnSorting: {
     sortEmptyCells: false,
   },
@@ -58,6 +60,7 @@ handleLoadedData({
     id: "NSW4119",
     properties: {
       name: "WAGGA WAGGA",
+      state: "NSW",
     },
     geometry: {
       type: "Point",
@@ -71,16 +74,56 @@ handleLoadedData({
 
 /** Handle a freshly loaded GeoJSON FeatureCollection. */
 function handleLoadedData(fc) {
-  features = fc.features; // keep for afterSelection
-  hot.loadData(features); // ... and load it
+  all = features = fc.features; // keep for afterSelection
+  rebuildFilterTogglesControl();
+  updateDisplay();
+}
+
+/** Build or rebuild the filter toggles control */
+function rebuildFilterTogglesControl() {
+  if (legend) {
+    map.off('filtered');
+    legend.remove(); // remove it
+  }
+  legend = L.control.filterToggles(all, [{
+    name: 'State',
+    labelFunction: getStateLabel,
+  }, {
+    name: 'UTM Zone',
+    labelFunction: getZoneLabel,
+  }]),
+  legend.addTo(map);
+  map.on('filtered', onFilter);
+}
+
+/** Handle the filter toggles control's changes */
+function onFilter(event) {
+  features = event.survivors;
+  updateDisplay();
+}
+
+/** Update the display */
+function updateDisplay() {
+  hot.loadData(features);
 
   if (layer) {
     layer.remove(); // remove it
   }
 
-  // http://leafletjs.com/reference-1.2.0.html#geojson
+  const fc = { type: 'FeatureCollection', features };
   layer = L.geoJSON(fc, { onEachFeature: onEachFeature });
   layer.addTo(map);
+}
+
+/** Get the state label for a feature. */
+function getStateLabel(feature) {
+  return feature.properties.state;
+}
+
+/** Get the zone label for a feature. */
+function getZoneLabel(feature) {
+  const lat = feature.geometry.coordinates[0];
+  return (1 + Math.floor((lat + 180) / 6)).toFixed(0);
 }
 
 /** On each feature added to Leaflet, bind a popup. */
@@ -91,7 +134,7 @@ function onEachFeature(feature, layer) {
   layer.bindPopup(parts.join(' aka '));
 }
 
-/** After selection in Handsontable, fly to the row's feature if it's just one row. */
+/** After selecting a row in Handsontable, fly to the row's feature */
 function afterSelection(r, c, r2, c2) {
   if (r === r2 && c === c2) {
     const feature = features[hot.toPhysicalRow(r)];
