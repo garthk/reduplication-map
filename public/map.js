@@ -1,5 +1,5 @@
 const map = L.map('map').setView([ -33.50115712, 151.29601339 ], 13);
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 map.flyToBounds([[ -43.63, 113.34 ], [ -10.67, 153.57 ]]);
