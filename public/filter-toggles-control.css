@@ -1,6 +1,11 @@
 .leaflet-control-filter-toggles a.leaflet-touch {
   padding: 0 0.5em 0 0.5em;
   user-select: none;
+  width: auto;
+  max-width: 15em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 a.leaflet-control-filter-toggles-active {
