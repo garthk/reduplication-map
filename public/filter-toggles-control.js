@@ -204,7 +204,7 @@ L.Control.FilterToggles = L.Control.extend({
 
 /** Create a `L.Control.FilterToggles` control */
 L.control.filterToggles = function(all, filters, options) {
-  return new L.Control.FilterToggles(features, filters, options);
+  return new L.Control.FilterToggles(all, filters, options);
 }
 
 /** A group of toggles. */
