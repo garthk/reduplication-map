@@ -6,15 +6,19 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  background-color: #bbb;
 }
 
 a.leaflet-control-filter-toggles-active {
-  font-weight: bold;
-  background-color: #fcf;
+  background-color: #fff !important;
+}
+
+.leaflet-control-filter-toggles a.leaflet-touch:hover {
+  background-color: #ddd !important;
 }
 
 a.leaflet-control-filter-toggles-active:hover {
-  background-color: #ece;
+  background-color: #ddd !important;
 }
 
 .leaflet-control-filter-toggles {
