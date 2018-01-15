@@ -3,6 +3,8 @@
  * @property {string} name - the filter's name
  * @property {function(any): string} labelFunction -
  * the filter's label function
+ * @property {function(string): string} legendFunction -
+ * a function returning extra legend HTML for a label
  *
  * A filter definition for `Control.FilterToggles`.
  */
@@ -57,6 +59,7 @@ L.Control.FilterToggles = L.Control.extend({
    */
   _initFilter: function _initFilter(filter) {
     const labelFunction = filter.labelFunction;
+    const legendFunction = filter.legendFunction || defaultLegendFunction;
     const name = filter.name || labelFunction.name;
     const buckets = {};
     const elements = {};
@@ -76,6 +79,7 @@ L.Control.FilterToggles = L.Control.extend({
     return {
       name,
       labelFunction,
+      legendFunction,
       buckets,
       state,
       elements,
@@ -100,6 +104,8 @@ L.Control.FilterToggles = L.Control.extend({
         filter.elements[label] = link;
         link.innerText = label;
         link.title = `Filter by ${filter.name}: ${label}`;
+        const legendHtml = filter.legendFunction(label) || '';
+        link.innerHTML = link.innerHTML + legendHtml;
         link.setAttribute('role', 'button');
         link.setAttribute('aria-label', label);
         L.DomEvent.disableClickPropagation(link);
@@ -280,4 +286,9 @@ class ToggleGroup {
       }
     }
   }
+}
+
+/** Default `legendFunction` */
+function defaultLegendFunction(label) {
+  return '';
 }
