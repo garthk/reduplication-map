@@ -9,3 +9,15 @@ The raw data is ~6GB raw, so I'm not decoding it live to produce the feature col
 [LORAPC]: https://en.wikipedia.org/wiki/List_of_reduplicated_Australian_place_names
 [G-NAF]: https://www.psma.com.au/products/g-naf
 [dgaugnaf]: https://data.gov.au/dataset/geocoded-national-address-file-g-naf
+
+## Trying it Locally
+
+Got Node?
+
+    npm install
+    npm start
+
+Got Python?
+
+    cd public
+    python -m SimpleHTTPServer
