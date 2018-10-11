@@ -16,7 +16,7 @@ const hot = new Handsontable(document.getElementById('table'), {
   readOnly: true,
 });
 
-fetch('/places.json').then(r => r.json()).then(handleLoadedData);
+fetch('places.json').then(r => r.json()).then(handleLoadedData);
 
 /** Handle a freshly loaded GeoJSON FeatureCollection. */
 function handleLoadedData(fc) {
