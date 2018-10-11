@@ -19,5 +19,5 @@ Got Node?
 
 Got Python?
 
-    cd public
+    cd docs
     python -m SimpleHTTPServer

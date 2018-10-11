@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path');
 
-/** 
+/**
  * Make our application
- * 
- * @param {string} staticdir Where to find `index.html` and static assets 
+ *
+ * @param {string} staticdir Where to find `index.html` and static assets
  */
 function mkapp(staticdir) {
   const app = express();
@@ -20,7 +20,7 @@ function mkapp(staticdir) {
 
 /**
  * Have an app listen on a port.
- * 
+ *
  * @param {Express} app The app
  * @param {number} port The port
  */
@@ -32,6 +32,6 @@ function listen(app, port) {
 }
 
 if (!module.parent) {
-  const app = mkapp(path.join(__dirname, 'public'));
+  const app = mkapp(path.join(__dirname, 'docs'));
   listen(app, process.env.PORT || '8080');
 }
